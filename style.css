@@ -6,7 +6,7 @@
 
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #f4f4f4;
+    background-color: ##36454F;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -44,7 +44,7 @@ body {
 }
 
 .text-content .highlight {
-    color: #e94e1b;
+    color: ##e07a5f;
 }
 
 .text-content h3 {
@@ -78,7 +78,7 @@ body {
 }
 
 .btn-experience {
-    background-color: #e94e1b;
+    background-color: ##F5F5F5;
     color: white;
 }
 
