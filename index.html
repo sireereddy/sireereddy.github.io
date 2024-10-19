@@ -4,25 +4,57 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Futura+PT:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <section class="portfolio">
-        <div class="container">
-            <div class="text-content">
-                <h1>Hi</h1>
-                <h2>I'm <span class="highlight">Hannah</span></h2>
-                <h3>a Frontend Developer</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab nemo quos deserunt, asperiores possimus.</p>
-                <div class="buttons">
-                    <a href="#" class="btn btn-hire">Hire Me</a>
-                    <a href="#" class="btn btn-experience">Experience</a>
-                </div>
-            </div>
-            <div class="image-content">
-                <img src="https://via.placeholder.com/300" alt="Profile Picture">
+    <header>
+        <div>Your Name/Logo</div>
+        <nav>
+            <a href="#about">Home</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact Me</a>
+        </nav>
+    </header>
+    <section id="about" class="content">
+        <div>
+            <h1>About Me</h1>
+            <p>Short bio goes here. Share your background and interests.</p>
+            <div>
+                <a href="https://linkedin.com">LinkedIn</a>
+                <a href="https://twitter.com">Twitter</a>
+                <a href="https://instagram.com">Instagram</a>
             </div>
         </div>
+        <img src="your-photo.jpg" alt="Your Photo">
+    </section>
+    <section id="skills" class="skills">
+        <h1>Skills</h1>
+        <ul>
+            <li>Skill 1</li>
+            <li>Skill 2</li>
+            <li>Certification A</li>
+            <li>Certification B</li>
+        </ul>
+    </section>
+    <section id="projects" class="projects">
+        <h1>Projects</h1>
+        <ul>
+            <li>
+                <img src="project-thumbnail.jpg" alt="Project Thumbnail">
+                <p>Project description. <a href="project-link">View Project</a></p>
+            </li>
+        </ul>
+    </section>
+    <section id="contact" class="contact">
+        <h1>Contact Me</h1>
+        <form action="contact-form-handler.php" method="post">
+            <input type="text" name="name" placeholder="Your Name">
+            <input type="email" name="email" placeholder="Your Email">
+            <textarea name="message" rows="5" placeholder="Your Message"></textarea>
+            <button type="submit">Send</button>
+        </form>
     </section>
 </body>
 </html>
