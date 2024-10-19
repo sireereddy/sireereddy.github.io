@@ -11,7 +11,7 @@ header {
     align-items: center;
     padding: 1em 2em;
     background-color: #F5F5F5; /* White background for header */
-    height: 200px; /* Adjust this value for more/less height */
+    height: 100px; /* Adjust this value for more/less height */
 }
 
 header div, nav a {
