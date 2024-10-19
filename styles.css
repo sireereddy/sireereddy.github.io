@@ -10,11 +10,14 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 1em 2em;
-    background-color: #444;
+    background-color: #ffffff; /* White background for header */
+}
+
+header div, nav a {
+    color: #333333; /* Dark charcoal font */
 }
 
 nav a {
-    color: #e07a5f; /* Highlight color */
     margin-left: 20px;
     text-decoration: none;
     font-weight: bold;
