@@ -1,111 +1,74 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: ##36454F;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+    margin: 0;
+    font-family: 'Futura PT', sans-serif;
+    background-color: #333333; /* Dark charcoal */
+    color: #f8f9fa; /* Off-white */
 }
 
-.portfolio {
-    width: 80%;
-    max-width: 1200px;
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
-    padding: 2rem;
-}
-
-.container {
+header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap;
+    padding: 1em 2em;
+    background-color: #444;
 }
 
-.text-content {
-    max-width: 500px;
-}
-
-.text-content h1 {
-    font-size: 2rem;
-    margin-bottom: 0.5rem;
-}
-
-.text-content h2 {
-    font-size: 3rem;
-    color: black;
-}
-
-.text-content .highlight {
-    color: ##e07a5f;
-}
-
-.text-content h3 {
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
-    color: #333;
-}
-
-.text-content p {
-    font-size: 1rem;
-    margin-bottom: 2rem;
-    color: #666;
-}
-
-.buttons {
-    display: flex;
-    gap: 1rem;
-}
-
-.btn {
+nav a {
+    color: #e07a5f; /* Highlight color */
+    margin-left: 20px;
     text-decoration: none;
-    padding: 0.75rem 1.5rem;
-    border-radius: 5px;
-    font-size: 1rem;
     font-weight: bold;
 }
 
-.btn-hire {
-    background-color: black;
-    color: white;
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2em;
 }
 
-.btn-experience {
-    background-color: ##F5F5F5;
-    color: white;
-}
-
-.image-content {
-    flex-shrink: 0;
-}
-
-.image-content img {
+.content img {
+    width: 200px;
+    height: auto;
     border-radius: 50%;
-    width: 250px;
-    height: 250px;
-    object-fit: cover;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-    .container {
-        flex-direction: column;
-        text-align: center;
-    }
+.content div {
+    max-width: 60%;
+}
 
-    .text-content {
-        margin-bottom: 2rem;
-    }
+.skills, .projects, .contact {
+    text-align: left;
+    margin: 2em;
+}
 
-    .image-content img {
-        width: 200px;
-        height: 200px;
-    }
+.skills ul, .projects ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.skills li, .projects li {
+    background-color: #e07a5f;
+    color: #333333;
+    margin: 0.5em 0;
+    padding: 0.5em;
+    border-radius: 5px;
+}
+
+.contact input, .contact textarea {
+    display: block;
+    width: 100%;
+    margin: 0.5em 0;
+    padding: 0.5em;
+    border: none;
+    border-radius: 5px;
+}
+
+.contact button {
+    background-color: #e07a5f;
+    color: #333333;
+    padding: 0.5em 1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
 }
